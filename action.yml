@@ -1,0 +1,6 @@
+name: 'Set up bun'
+description: 'Set up bun'
+
+runs:
+  using: 'node16'
+  main: 'index.js'
