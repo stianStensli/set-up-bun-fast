@@ -12,4 +12,4 @@ async function main(){
         core.setFailed(error.message);
     }
 }
-await main()
+core.group('Downloading bun...', async () => await main())
