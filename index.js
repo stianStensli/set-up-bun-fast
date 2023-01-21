@@ -4,8 +4,8 @@ const exec = require('@actions/exec');
 
 async function main(){
     try {
-        await exec.exec("/bin/bash", ["-c", "curl -fsSL https://bun.sh/install | bash"]).
-        core.addPath(`${HOME}/.bun/.bun/bin/`)
+        await exec.exec("/bin/bash", ["-c", "curl -fsSL https://bun.sh/install | bash"])
+        core.addPath(`~/.bun/.bun/bin/`)
 
         console.log("done...")
     } catch (error) {
